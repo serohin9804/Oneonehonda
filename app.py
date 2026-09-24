@@ -101,7 +101,23 @@ else:
                 "year": "Год выпуска", "source": "Площадка"},
         color_discrete_sequence=px.colors.qualitative.Safe,
     )
-    fig.update_layout(height=540, legend_title_text="Год выпуска / площадка", margin=dict(l=10, r=10, t=20, b=10))
+    fig.update_layout(
+        height=620,
+        margin=dict(l=20, r=20, t=20, b=120),
+        legend=dict(
+            title_text="Год выпуска · площадка",
+            orientation="h",
+            yanchor="top",
+            y=-0.22,
+            xanchor="left",
+            x=0,
+            entrywidth=0.22,
+            entrywidthmode="fraction",
+            traceorder="grouped",
+        ),
+    )
+    fig.update_xaxes(title="Пробег, км", showgrid=True, gridcolor="rgba(120, 130, 140, 0.18)")
+    fig.update_yaxes(title=f"Цена, {currency}", tickformat="~s", showgrid=True, gridcolor="rgba(120, 130, 140, 0.18)")
     fig.update_traces(marker=dict(size=13, opacity=0.82, line=dict(width=1, color="white")))
     st.plotly_chart(fig, width="stretch")
 
