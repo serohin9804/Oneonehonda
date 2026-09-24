@@ -1,0 +1,9 @@
+{
+  "collected_at": "2026-09-25 (по Киеву)",
+  "period": "2026-09-11 — 2026-09-25",
+  "sources": [
+    {"name": "AUTO.RIA", "url": "https://auto.ria.com/uk/search/?search_type=1&categories.main.id=1&brand.id=28&model.id=0", "result": "проверяется"},
+    {"name": "OLX Украина", "url": "https://www.olx.ua/uk/list/q-honda-m-nv/", "result": "проверяется"},
+    {"name": "RST.ua", "url": "https://rst.ua/oldcars/honda/", "result": "проверяется"}
+  ]
+}
